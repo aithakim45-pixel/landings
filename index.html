@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEO 5 - GSD IDEA</title>
+    <style>
+        /* Base Reset & Typography */
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff; /* White background */
+            color: #333333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Top Left Text */
+        .top-left-brand {
+            position: absolute;
+            top: 24px;
+            left: 32px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #444;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Center Content Container */
+        .content-wrapper {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Big Title */
+        .main-title {
+            font-size: 5rem;
+            font-weight: 900;
+            margin: 0 0 40px 0;
+            color: #111;
+            letter-spacing: 2px;
+        }
+
+        /* Links Container */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* Button Styling for Links */
+        .btn-link {
+            display: inline-block;
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        /* Primary Link Style */
+        .btn-primary {
+            background-color: #0056b3;
+            color: #ffffff;
+            border: 2px solid #0056b3;
+        }
+
+        .btn-primary:hover {
+            background-color: #004494;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2);
+        }
+
+        /* Secondary Link Style */
+        .btn-secondary {
+            background-color: #ffffff;
+            color: #0056b3;
+            border: 2px solid #0056b3;
+        }
+
+        .btn-secondary:hover {
+            background-color: #f8faff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 86, 179, 0.1);
+        }
+
+        /* Responsive adjustments for mobile screens */
+        @media (max-width: 600px) {
+            .main-title {
+                font-size: 3.5rem;
+            }
+            .top-left-brand {
+                top: 16px;
+                left: 16px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-left-brand">
+        GSD IDEA
+    </div>
+
+    <div class="content-wrapper">
+        <h1 class="main-title">GEO 5</h1>
+        
+        <div class="links-container">
+            <a href="https://gsdidea.ae/your-geo5-geotechnical-suite-gulf-reseller/" 
+               class="btn-link btn-primary" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                GSD IDEA GEO 5
+            </a>
+
+            <a href="https://deepfoundationsmena.com/" 
+               class="btn-link btn-secondary" 
+               target="_blank" 
+               rel="noopener noreferrer">
+                Sign up to the GEO 5 Event
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
