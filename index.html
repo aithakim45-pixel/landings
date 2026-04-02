@@ -24,22 +24,33 @@
             position: relative;
         }
 
-        /* Top Left Text */
+        /* Top Left Logo Container */
         .top-left-brand {
             position: absolute;
             top: 24px;
             left: 32px;
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #444;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
+        }
+
+        .top-left-brand img {
+            height: 40px; /* Adjust this value to make the logo bigger/smaller */
+            width: auto;
         }
 
         /* Center Content Container */
         .content-wrapper {
             text-align: center;
             padding: 20px;
+            margin-top: 40px; /* Pushes content down slightly so it doesn't overlap the top logo on small screens */
+        }
+
+        /* Center GEO 5 Logo */
+        .center-logo {
+            margin-bottom: 10px;
+        }
+
+        .center-logo img {
+            height: 100px; /* Adjust this value to make the center logo bigger/smaller */
+            width: auto;
         }
 
         /* Big Title */
@@ -66,7 +77,7 @@
             font-size: 1.1rem;
             font-weight: 600;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 25px; /* Rounded pill shape */
             transition: all 0.3s ease;
             width: 100%;
             max-width: 400px;
@@ -74,28 +85,29 @@
 
         /* Primary Link Style */
         .btn-primary {
-            background-color: #0056b3;
+            background-color: #185ba5; /* Matched to the blue in your logo */
             color: #ffffff;
-            border: 2px solid #0056b3;
+            border: 2px solid #185ba5;
         }
 
         .btn-primary:hover {
-            background-color: #004494;
+            background-color: #124680;
+            border-color: #124680;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 86, 179, 0.2);
+            box-shadow: 0 4px 12px rgba(24, 91, 165, 0.2);
         }
 
         /* Secondary Link Style */
         .btn-secondary {
             background-color: #ffffff;
-            color: #0056b3;
-            border: 2px solid #0056b3;
+            color: #185ba5;
+            border: 2px solid #185ba5;
         }
 
         .btn-secondary:hover {
-            background-color: #f8faff;
+            background-color: #f4f8fc;
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 86, 179, 0.1);
+            box-shadow: 0 4px 12px rgba(24, 91, 165, 0.1);
         }
 
         /* Responsive adjustments for mobile screens */
@@ -106,7 +118,12 @@
             .top-left-brand {
                 top: 16px;
                 left: 16px;
-                font-size: 1rem;
+            }
+            .top-left-brand img {
+                height: 30px;
+            }
+            .center-logo img {
+                height: 80px;
             }
         }
     </style>
@@ -114,10 +131,15 @@
 <body>
 
     <div class="top-left-brand">
-        GSD IDEA
+        <img src="gsd-logo.png" alt="GSD IDEA Logo">
     </div>
 
     <div class="content-wrapper">
+        
+        <div class="center-logo">
+            <img src="geo5-logo.png" alt="GEO 5 Logo">
+        </div>
+
         <h1 class="main-title">GEO 5</h1>
         
         <div class="links-container">
@@ -132,7 +154,7 @@
                class="btn-link btn-secondary" 
                target="_blank" 
                rel="noopener noreferrer">
-                Sign up to the GEO 5 Event
+                SIGN UP TO THE GEO 5 EVENT
             </a>
         </div>
     </div>
